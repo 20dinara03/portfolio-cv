@@ -7,9 +7,10 @@ export const profile = {
   relocation:
     "Open to relocate to Bratislava / Slovakia (hybrid or on-site). Happy to discuss employer-supported work authorization as part of the offer.",
   email: "dg_Yelena-Servis@mail.ru",
+  emailSecondary: "garipovad020@gmail.com",
   github: "https://github.com/20dinara03",
-  linkedin: "https://www.linkedin.com/in/dinara-garipova",
-  portfolio: "https://20dinara03.github.io",
+  linkedin: "https://www.linkedin.com/in/dinara-garipova-62557b423",
+  portfolio: "https://portfolio-cv-ashy.vercel.app",
   university: "https://www.fit.vut.cz/",
   company: {
     name: "WebStead",

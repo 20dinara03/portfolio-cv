@@ -23,10 +23,17 @@ export function Contact() {
             days.
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center">
+            <a
+              href={`mailto:${profile.emailSecondary}`}
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400"
+            >
+              <Mail size={16} />
+              {profile.emailSecondary}
+            </a>
             <a
               href={`mailto:${profile.email}`}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/5"
             >
               <Mail size={16} />
               {profile.email}

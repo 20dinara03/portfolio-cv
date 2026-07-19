@@ -63,6 +63,13 @@ export function Hero() {
 
           <div className="mt-10 flex flex-wrap items-center gap-4 text-sm text-slate-400">
             <a
+              href={`mailto:${profile.emailSecondary}`}
+              className="inline-flex items-center gap-2 transition hover:text-cyan-300"
+            >
+              <Mail size={16} />
+              {profile.emailSecondary}
+            </a>
+            <a
               href={`mailto:${profile.email}`}
               className="inline-flex items-center gap-2 transition hover:text-cyan-300"
             >

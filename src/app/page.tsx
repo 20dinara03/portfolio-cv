@@ -14,7 +14,7 @@ const jsonLd = {
   "@type": "Person",
   name: profile.name,
   jobTitle: profile.title,
-  email: profile.email,
+  email: [profile.emailSecondary, profile.email],
   url: profile.portfolio,
   birthDate: profile.birthDate,
   address: {
