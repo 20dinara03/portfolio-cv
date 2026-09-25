@@ -1,10 +1,10 @@
 import { Hero } from "@/components/Hero";
-import { About } from "@/components/About";
+import { FeaturedProjects } from "@/components/FeaturedProjects";
 import { Experience } from "@/components/Experience";
+import { MoreCommercialWork } from "@/components/MoreCommercialWork";
 import { Skills } from "@/components/Skills";
-import { WorkProjects } from "@/components/WorkProjects";
-import { AcademicProjects } from "@/components/AcademicProjects";
 import { Education } from "@/components/Education";
+import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
 import { FadeIn } from "@/components/FadeIn";
 import { profile } from "@/data/profile";
@@ -13,14 +13,13 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: profile.name,
-  jobTitle: profile.title,
-  email: [profile.emailSecondary, profile.email],
+  jobTitle: profile.professionalTitle,
+  email: profile.email,
   url: profile.portfolio,
-  birthDate: profile.birthDate,
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Kazan",
-    addressCountry: "RU",
+    addressLocality: profile.targetLocation,
+    addressCountry: "SK",
   },
   sameAs: [profile.github, profile.linkedin],
   worksFor: {
@@ -32,27 +31,25 @@ const jsonLd = {
     {
       "@type": "CollegeOrUniversity",
       name: "Brno University of Technology — Faculty of Information Technology",
+      url: profile.university,
     },
     {
       "@type": "CollegeOrUniversity",
-      name: "Kazan National Research Technical University (KNRTU)",
+      name: "Kazan National Research Technical University",
     },
   ],
   knowsAbout: [
     "React",
     "TypeScript",
     "Next.js",
-    "Redux",
-    "REST APIs",
-    "Vite",
     "Java",
     "Spring",
-    "Flutter",
-    "Figma handoff",
-    "Frontend Development",
+    "REST APIs",
+    "Redux",
     "Full-Stack Development",
+    "Software Development",
   ],
-  description: profile.subtitle,
+  description: profile.tagline,
 };
 
 export default function Home() {
@@ -64,22 +61,22 @@ export default function Home() {
       />
       <Hero />
       <FadeIn>
-        <About />
+        <FeaturedProjects />
       </FadeIn>
       <FadeIn>
         <Experience />
       </FadeIn>
       <FadeIn>
+        <MoreCommercialWork />
+      </FadeIn>
+      <FadeIn>
         <Skills />
       </FadeIn>
       <FadeIn>
-        <WorkProjects />
-      </FadeIn>
-      <FadeIn>
-        <AcademicProjects />
-      </FadeIn>
-      <FadeIn>
         <Education />
+      </FadeIn>
+      <FadeIn>
+        <About />
       </FadeIn>
       <FadeIn>
         <Contact />

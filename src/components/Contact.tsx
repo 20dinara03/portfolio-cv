@@ -1,72 +1,69 @@
 import { profile } from "@/data/profile";
 import { SectionHeading } from "./SectionHeading";
-import { Mail, MapPin, Plane } from "lucide-react";
+import { Mail, MapPin, Download } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "./Icons";
 
 export function Contact() {
   return (
-    <section
-      id="contact"
-      className="scroll-mt-24 border-t border-white/5 bg-gradient-to-b from-transparent to-cyan-950/20 py-20 sm:py-28"
-    >
+    <section id="contact" className="scroll-mt-20 border-t border-border py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Contact"
-          title="Let's talk about the role"
-          description="Open to Frontend (React/TypeScript) and Junior Fullstack roles in Bratislava — ready to relocate and start quickly."
+          title="Interested in working together?"
+          description="Open to full-stack, React, and software developer roles in Bratislava and Slovakia."
           align="center"
         />
 
-        <div className="mx-auto mt-12 max-w-xl rounded-2xl border border-white/10 bg-[#111827]/70 p-8 text-center">
-          <p className="text-lg text-slate-200">
-            Email or LinkedIn works best. I usually reply within 1–2 business
+        <div className="mx-auto mt-10 max-w-lg rounded-xl border border-border bg-surface p-8 text-center">
+          <p className="text-muted-foreground">
+            Email or LinkedIn works best. I typically reply within 1–2 business
             days.
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center">
-            <a
-              href={`mailto:${profile.emailSecondary}`}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400"
-            >
-              <Mail size={16} />
-              {profile.emailSecondary}
-            </a>
+          <div className="mt-7 flex flex-col gap-3">
             <a
               href={`mailto:${profile.email}`}
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/5"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-accent-foreground transition hover:bg-accent/90"
             >
-              <Mail size={16} />
+              <Mail size={16} aria-hidden />
               {profile.email}
             </a>
             <a
               href={profile.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/5"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-medium text-foreground transition hover:border-accent/30"
             >
               <LinkedInIcon size={16} />
               LinkedIn
             </a>
           </div>
 
-          <div className="mt-8 space-y-3 text-sm text-slate-400">
-            <p className="inline-flex items-center justify-center gap-2">
-              <MapPin size={15} className="text-cyan-400" />
-              {profile.location}
-            </p>
-            <p className="mx-auto flex max-w-md items-start justify-center gap-2 text-left sm:text-center">
-              <Plane size={15} className="mt-0.5 shrink-0 text-cyan-400" />
-              <span>{profile.relocation}</span>
-            </p>
+          <div className="mt-8 space-y-3 text-sm text-muted">
             <a
               href={profile.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 transition hover:text-cyan-300"
+              className="inline-flex items-center justify-center gap-2 transition hover:text-accent"
             >
               <GitHubIcon size={15} />
               github.com/20dinara03
             </a>
+            {profile.resumeUrl && (
+              <a
+                href={profile.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 transition hover:text-accent"
+              >
+                <Download size={15} aria-hidden />
+                Download Resume
+              </a>
+            )}
+            <p className="flex items-center justify-center gap-2">
+              <MapPin size={15} className="text-accent" aria-hidden />
+              {profile.relocationStatus}
+            </p>
           </div>
         </div>
       </div>

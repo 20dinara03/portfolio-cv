@@ -1,20 +1,47 @@
 @import "tailwindcss";
 
 :root {
-  --background: #070b12;
-  --foreground: #e2e8f0;
-  --accent: #22d3ee;
+  --background: #0a0c10;
+  --foreground: #e8eaed;
+  --muted: #9ca3af;
+  --muted-foreground: #b0b8c4;
+  --accent: #3b9eff;
+  --accent-foreground: #0a0c10;
+  --border: rgba(255, 255, 255, 0.08);
+  --surface: rgba(255, 255, 255, 0.02);
+  --surface-elevated: rgba(255, 255, 255, 0.04);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
   --font-sans: var(--font-dm-sans);
   --font-mono: var(--font-jetbrains);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 body {
@@ -24,8 +51,13 @@ body {
 }
 
 ::selection {
-  background: rgb(34 211 238 / 0.35);
+  background: rgb(59 158 255 / 0.3);
   color: white;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 @media print {

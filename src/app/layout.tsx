@@ -2,52 +2,64 @@ import type { Metadata } from "next";
 import { DM_Sans, JetBrains_Mono } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { profile } from "@/data/profile";
 import "./globals.css";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 const jetbrains = JetBrains_Mono({
   variable: "--font-jetbrains",
   subsets: ["latin"],
   weight: ["400", "500"],
+  display: "swap",
 });
 
+const siteDescription =
+  "Full-stack developer with commercial React, Next.js and TypeScript experience, MSc in Computer Science from FIT VUT, and Java/Spring backend foundation. Relocating to Bratislava, Slovakia.";
+
 export const metadata: Metadata = {
-  title: "Dinara Garipova — Frontend Developer (React / TypeScript)",
-  description:
-    "Lead Frontend at WebStead. Production React, Next.js, TypeScript, Redux, REST. Flutter from university projects. Open to Bratislava roles. Based in Kazan, ready to relocate.",
+  metadataBase: new URL(profile.portfolio),
+  title: {
+    default: `${profile.name} | Full-stack Developer`,
+    template: `%s | ${profile.name}`,
+  },
+  description: siteDescription,
   keywords: [
-    "Frontend Developer",
+    "Full-stack Developer",
     "React",
     "TypeScript",
     "Next.js",
-    "Redux",
-    "Vite",
-    "REST API",
     "Java",
     "Spring",
-    "Flutter",
-    "Mobile",
+    "Software Developer",
     "Bratislava",
-    "Junior Frontend",
-    "Full-Stack",
-    "WebStead",
+    "Slovakia",
+    "Frontend Developer",
     "VUT FIT",
-    "KNRTU",
-    "Kazan",
     "Portfolio",
   ],
-  authors: [{ name: "Dinara Garipova" }],
+  authors: [{ name: profile.name }],
+  creator: profile.name,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Dinara Garipova — Frontend Developer (React / TypeScript)",
-    description:
-      "Production React/TypeScript portfolio · Lead Frontend at WebStead · Open to Bratislava / Slovakia relocation.",
+    title: `${profile.name} | Full-stack Developer`,
+    description: siteDescription,
     type: "website",
     locale: "en_US",
+    url: profile.portfolio,
+    siteName: `${profile.name} — Portfolio`,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${profile.name} | Full-stack Developer`,
+    description: siteDescription,
   },
   robots: { index: true, follow: true },
 };
