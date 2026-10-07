@@ -10,7 +10,7 @@ export function Contact() {
         <SectionHeading
           eyebrow="Contact"
           title="Interested in working together?"
-          description="Open to full-stack, React, and software developer roles in Bratislava and Slovakia."
+          description="Open to Frontend, React and Next.js opportunities in Bratislava and across Slovakia."
           align="center"
         />
 

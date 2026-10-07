@@ -29,10 +29,10 @@ export function Hero() {
 
           <p className="mt-3 text-xl font-medium text-foreground sm:text-2xl">
             {profile.professionalTitle}
-          </p>
-
-          <p className="mt-2 font-mono text-sm text-accent sm:text-base">
-            {profile.primaryStack.join(" · ")}
+            <span className="text-muted"> | </span>
+            <span className="font-mono text-accent">
+              {profile.primaryStack.join(" · ")}
+            </span>
           </p>
 
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">

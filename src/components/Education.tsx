@@ -13,8 +13,8 @@ export function Education() {
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Education"
-          title="Computer Science foundation"
-          description="MSc from FIT VUT Brno, plus BSc degrees from VUT FIT and KNRTU — supporting backend, Java/Spring, and software engineering depth."
+          title="Application Development & IT education"
+          description="MSc in Application Development from FIT VUT Brno, plus bachelor's degrees from VUT FIT and KNRTU — with additional Java/Spring Boot and software engineering depth."
         />
 
         <div className="mt-10 space-y-4">
@@ -61,8 +61,8 @@ export function Education() {
             Relevant university projects
           </h3>
           <p className="mt-2 max-w-2xl text-sm text-muted">
-            Selected coursework projects supporting Java, Spring, REST backends,
-            databases, and full-stack development.
+            Selected coursework projects supporting Java, Spring Boot, REST
+            backends, databases, and end-to-end application development.
           </p>
 
           <div className="mt-6 grid gap-4 sm:grid-cols-2">

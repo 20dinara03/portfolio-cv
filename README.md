@@ -6,10 +6,9 @@ HR-focused portfolio site built with **Next.js**, **TypeScript**, and **Tailwind
 
 - **Hero** — role, availability, quick stats
 - **About** — summary for recruiters
-- **Skills** — frontend, full-stack, mobile
-- **Work** — 6 live production projects (Spinny, Cantexniki, Moonera, Paradim, DOORS RUSSIA, Kuptsov Realty)
-- **Projects** — top 5 VUT FIT GitHub repos
-- **Education** — MSc/BSc at FIT VUT Brno
+- **Skills** — frontend-first (React / Next.js / TypeScript), plus backend knowledge
+- **Work** — commercial projects including Spinny, Cantexniki, Moonera Habitat and more
+- **Education** — MSc Application Development & BSc at FIT VUT Brno
 - **Contact** — email, LinkedIn, GitHub
 
 ## Run locally

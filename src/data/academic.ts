@@ -8,7 +8,7 @@ export type AcademicProject = {
   highlight?: boolean;
 };
 
-/** University projects supporting backend/full-stack positioning — shown in Education */
+/** University projects supporting backend and software engineering depth — shown in Education */
 export const academicProjects: AcademicProject[] = [
   {
     id: "pest",

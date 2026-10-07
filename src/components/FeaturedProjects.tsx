@@ -11,7 +11,7 @@ export function FeaturedProjects() {
         <SectionHeading
           eyebrow="Featured Projects"
           title="Production applications I built"
-          description="Selected commercial projects with the strongest engineering depth — SaaS dashboards, e-commerce with state management and checkout, product configurators, and REST API integration."
+          description="Selected commercial frontend projects — SaaS dashboards, e-commerce platforms and client-facing catalogs built with React, Next.js and TypeScript."
         />
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2">

@@ -20,27 +20,27 @@ const jetbrains = JetBrains_Mono({
 });
 
 const siteDescription =
-  "Full-stack developer with commercial React, Next.js and TypeScript experience, MSc in Computer Science from FIT VUT, and Java/Spring backend foundation. Relocating to Bratislava, Slovakia.";
+  "Frontend Developer specializing in React, Next.js and TypeScript, with production SaaS and e-commerce experience.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(profile.portfolio),
   title: {
-    default: `${profile.name} | Full-stack Developer`,
+    default: `${profile.name} | Frontend Developer`,
     template: `%s | ${profile.name}`,
   },
   description: siteDescription,
   keywords: [
-    "Full-stack Developer",
+    "Frontend Developer",
     "React",
     "TypeScript",
     "Next.js",
-    "Java",
-    "Spring",
-    "Software Developer",
+    "JavaScript",
+    "SaaS",
+    "E-commerce",
     "Bratislava",
     "Slovakia",
-    "Frontend Developer",
     "VUT FIT",
+    "Application Development",
     "Portfolio",
   ],
   authors: [{ name: profile.name }],
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: `${profile.name} | Full-stack Developer`,
+    title: `${profile.name} | Frontend Developer`,
     description: siteDescription,
     type: "website",
     locale: "en_US",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${profile.name} | Full-stack Developer`,
+    title: `${profile.name} | Frontend Developer`,
     description: siteDescription,
   },
   robots: { index: true, follow: true },

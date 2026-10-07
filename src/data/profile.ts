@@ -1,15 +1,9 @@
 export const profile = {
   name: "Dinara Garipova",
-  professionalTitle: "Full-stack Developer",
-  primaryStack: [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Java",
-    "Spring Boot",
-  ] as const,
+  professionalTitle: "Frontend Developer",
+  primaryStack: ["React", "Next.js", "TypeScript"] as const,
   tagline:
-    "Full-stack developer with 1+ year of commercial frontend experience building production web applications with React, Next.js and TypeScript, backed by an MSc in Computer Science (FIT VUT) and hands-on Java / Spring Boot / SQL experience from academic and project work.",
+    "Frontend Developer specializing in React, Next.js and TypeScript, building production web applications across SaaS and e-commerce. Experienced with REST APIs, authentication, complex application flows, state management and responsive UI development. MSc in Application Development from Brno University of Technology, with a strong software engineering foundation and additional Java/Spring Boot experience.",
 
   /** Update this single line when relocation/visa status changes */
   relocationStatus:
@@ -32,27 +26,25 @@ export const profile = {
     url: "https://webstead.ru/",
   },
 
-  commercialExperience: "1+ year",
-
   about: [
-    "I work as a commercial Frontend Developer at WebStead, building production React, Next.js and TypeScript applications for real client products — SaaS dashboards, e-commerce storefronts, and corporate platforms.",
-    "My strongest commercial experience is frontend application development: REST API integration, authentication flows, Redux and Context state, forms, configurators, cart/checkout UX, and reusable component architecture.",
-    "I completed an MSc at the Faculty of Information Technology, Brno University of Technology (FIT VUT), where coursework and projects covered Java, Spring Boot, REST backends, SQL/PostgreSQL, and broader software engineering.",
-    "I am developing professionally toward full-stack roles by combining commercial React experience with my Computer Science / backend foundation, and relocating to Bratislava for long-term software engineering opportunities in Slovakia.",
+    "I work as a commercial Frontend Developer at WebStead, building production React, Next.js and TypeScript applications for SaaS, e-commerce and client-facing web products.",
+    "My day-to-day work covers REST API integration, authentication flows, dashboards, CRUD interfaces, complex forms, filtering, state management and reusable UI architecture across responsive interfaces.",
+    "I hold an MSc in Application Development from the Faculty of Information Technology, Brno University of Technology (FIT VUT), with additional Java, Spring Boot, SQL and backend experience from university coursework and projects.",
+    "I am relocating to Bratislava and am primarily interested in Frontend, React and Next.js roles — bringing a solid software engineering foundation and backend familiarity as an additional advantage.",
   ],
 
   education: [
     {
-      degree: "MSc, Information Technology",
+      degree: "Master's Degree in Application Development",
       school:
         "Faculty of Information Technology, Brno University of Technology (VUT FIT)",
       period: "2024 — 2026",
-      focus: "Web & mobile applications",
+      focus: "Web & mobile applications, software engineering",
       note: "Completed 2026 · program in Czech · combined with commercial frontend work at WebStead",
       highlight: true,
     },
     {
-      degree: "BSc, Information Technology",
+      degree: "Bachelor's Degree in Information Systems and Technology",
       school:
         "Faculty of Information Technology, Brno University of Technology (VUT FIT)",
       period: "2021 — 2024",
