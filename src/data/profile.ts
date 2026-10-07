@@ -15,7 +15,6 @@ export const profile = {
   email: "garipovad020@gmail.com",
   emailSecondary: "dg_Yelena-Servis@mail.ru",
   github: "https://github.com/20dinara03",
-  linkedin: "https://www.linkedin.com/in/dinara-garipova-62557b423",
   portfolio: "https://portfolio-cv-ashy.vercel.app",
   /** Add PDF URL when available — e.g. "/resume/dinara-garipova-cv.pdf" */
   resumeUrl: "/resume/dinara-garipova-cv.pdf",

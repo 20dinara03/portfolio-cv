@@ -9,7 +9,7 @@ HR-focused portfolio site built with **Next.js**, **TypeScript**, and **Tailwind
 - **Skills** — frontend-first (React / Next.js / TypeScript), plus backend knowledge
 - **Work** — commercial projects including Spinny, Cantexniki, Moonera Habitat and more
 - **Education** — MSc Application Development & BSc at FIT VUT Brno
-- **Contact** — email, LinkedIn, GitHub
+- **Contact** — email, GitHub
 
 ## Run locally
 

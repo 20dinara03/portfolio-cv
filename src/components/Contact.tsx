@@ -1,7 +1,7 @@
 import { profile } from "@/data/profile";
 import { SectionHeading } from "./SectionHeading";
 import { Mail, MapPin, Download } from "lucide-react";
-import { GitHubIcon, LinkedInIcon } from "./Icons";
+import { GitHubIcon } from "./Icons";
 
 export function Contact() {
   return (
@@ -16,8 +16,7 @@ export function Contact() {
 
         <div className="mx-auto mt-10 max-w-lg rounded-xl border border-border bg-surface p-8 text-center">
           <p className="text-muted-foreground">
-            Email or LinkedIn works best. I typically reply within 1–2 business
-            days.
+            Email works best. I typically reply within 1–2 business days.
           </p>
 
           <div className="mt-7 flex flex-col gap-3">
@@ -27,15 +26,6 @@ export function Contact() {
             >
               <Mail size={16} aria-hidden />
               {profile.email}
-            </a>
-            <a
-              href={profile.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-medium text-foreground transition hover:border-accent/30"
-            >
-              <LinkedInIcon size={16} />
-              LinkedIn
             </a>
           </div>
 

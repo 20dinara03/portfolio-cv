@@ -3,7 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { profile } from "@/data/profile";
 import { Download, MapPin } from "lucide-react";
-import { GitHubIcon, LinkedInIcon } from "./Icons";
+import { GitHubIcon } from "./Icons";
 
 export function Hero() {
   const prefersReducedMotion = useReducedMotion();
@@ -81,15 +81,6 @@ export function Hero() {
             >
               <GitHubIcon size={16} />
               GitHub
-            </a>
-            <a
-              href={profile.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-muted transition hover:text-accent"
-            >
-              <LinkedInIcon size={16} />
-              LinkedIn
             </a>
             <a
               href="#contact"

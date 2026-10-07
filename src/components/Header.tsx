@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X, ExternalLink } from "lucide-react";
 import { profile } from "@/data/profile";
-import { GitHubIcon, LinkedInIcon } from "./Icons";
+import { GitHubIcon } from "./Icons";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -98,15 +98,6 @@ export function Header() {
           >
             <GitHubIcon size={18} />
           </a>
-          <a
-            href={profile.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn profile"
-            className="rounded-md p-2 text-muted transition hover:text-foreground"
-          >
-            <LinkedInIcon size={18} />
-          </a>
           {profile.resumeUrl ? (
             <a
               href={profile.resumeUrl}
@@ -172,15 +163,6 @@ export function Header() {
               aria-label="GitHub"
             >
               <GitHubIcon size={20} />
-            </a>
-            <a
-              href={profile.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted"
-              aria-label="LinkedIn"
-            >
-              <LinkedInIcon size={20} />
             </a>
           </div>
         </nav>
