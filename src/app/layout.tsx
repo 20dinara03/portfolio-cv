@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans, JetBrains_Mono } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { YandexMetrika } from "@/components/YandexMetrika";
 import { profile } from "@/data/profile";
 import "./globals.css";
 
@@ -72,6 +73,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSans.variable} ${jetbrains.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased">
+        <YandexMetrika />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
