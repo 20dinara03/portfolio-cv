@@ -62,6 +62,9 @@ export default function Home() {
       />
       <Hero />
       <FadeIn>
+        <About />
+      </FadeIn>
+      <FadeIn>
         <FeaturedProjects />
       </FadeIn>
       <FadeIn>
@@ -75,9 +78,6 @@ export default function Home() {
       </FadeIn>
       <FadeIn>
         <Education />
-      </FadeIn>
-      <FadeIn>
-        <About />
       </FadeIn>
       <FadeIn>
         <Contact />

@@ -6,7 +6,7 @@ export function FeaturedProjects() {
   const featured = getFeaturedProjects();
 
   return (
-    <section id="projects" className="scroll-mt-20 py-16 sm:py-24">
+    <section id="projects" className="scroll-mt-20 border-t border-border py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Featured Projects"

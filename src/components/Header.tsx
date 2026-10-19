@@ -7,11 +7,11 @@ import { GitHubIcon } from "./Icons";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
+  { href: "#about", label: "About", id: "about" },
   { href: "#projects", label: "Projects", id: "projects" },
   { href: "#experience", label: "Experience", id: "experience" },
   { href: "#skills", label: "Skills", id: "skills" },
   { href: "#education", label: "Education", id: "education" },
-  { href: "#about", label: "About", id: "about" },
   { href: "#contact", label: "Contact", id: "contact" },
 ];
 
