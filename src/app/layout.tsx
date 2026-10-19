@@ -21,7 +21,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 const siteDescription =
-  "Frontend Developer specializing in React, Next.js and TypeScript, with production SaaS and e-commerce experience.";
+  "Frontend Developer with commercial React, Next.js, and TypeScript experience building SaaS and e-commerce applications. Seeking opportunities in Bratislava, Slovakia.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(profile.portfolio),

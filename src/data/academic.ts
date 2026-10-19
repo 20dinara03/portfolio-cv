@@ -8,8 +8,18 @@ export type AcademicProject = {
   highlight?: boolean;
 };
 
-/** University projects supporting backend and software engineering depth — shown in Education */
+/** University projects supporting broader engineering depth — shown in Education */
 export const academicProjects: AcademicProject[] = [
+  {
+    id: "greenhouse",
+    name: "Smart Greenhouse",
+    course: "Master's Thesis — Application Development",
+    github: "https://github.com/20dinara03/smart-greenhouse-mobile-THE-VUT-FIT",
+    tags: ["Node.js", "Express", "Flutter", "Firebase", "IoT"],
+    description:
+      "End-to-end IoT system connecting ESP32 firmware, a Node.js REST backend, and a Flutter mobile app — broader software integration beyond frontend UI work.",
+    highlight: true,
+  },
   {
     id: "pest",
     name: "PEST Evaluation Platform",
@@ -18,7 +28,6 @@ export const academicProjects: AcademicProject[] = [
     tags: ["Java", "Spring", "Wicket", "Maven"],
     description:
       "Enterprise web app with layered Spring architecture — service, repository, and UI layers.",
-    highlight: true,
   },
   {
     id: "java-api",
@@ -27,7 +36,6 @@ export const academicProjects: AcademicProject[] = [
     github: "https://github.com/20dinara03/java-web-api-MBA-VUT-FIT",
     tags: ["Java", "REST", "API"],
     description: "Java REST web API — backend fundamentals with REST endpoints.",
-    highlight: true,
   },
   {
     id: "grafita",
@@ -36,18 +44,7 @@ export const academicProjects: AcademicProject[] = [
     github: "https://github.com/20dinara03/grafita-iot-platform-IIS-VUT-FIT",
     tags: ["Django", "Docker", "PostgreSQL", "REST"],
     description:
-      "Full-stack IoT device management — Django REST, PostgreSQL, Docker Compose.",
-    highlight: true,
-  },
-  {
-    id: "greenhouse",
-    name: "Smart Greenhouse",
-    course: "THE — Master's Thesis",
-    github: "https://github.com/20dinara03/smart-greenhouse-mobile-THE-VUT-FIT",
-    tags: ["Node.js", "Express", "Flutter", "Firebase"],
-    description:
-      "End-to-end IoT system — Node.js REST backend, Flutter app, ESP32 firmware.",
-    highlight: true,
+      "IoT device management with Django REST, PostgreSQL, and Docker Compose.",
   },
   {
     id: "quake",

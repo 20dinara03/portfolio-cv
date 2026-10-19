@@ -13,7 +13,7 @@ export function MoreCommercialWork() {
         <SectionHeading
           eyebrow="More Commercial Work"
           title="Additional client projects"
-          description="Breadth of real commercial development — corporate portals, e-commerce, CMS platforms, and sites in active development."
+          description="More commercial frontend work — e-commerce, corporate sites, CMS platforms, and projects still in development."
         />
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

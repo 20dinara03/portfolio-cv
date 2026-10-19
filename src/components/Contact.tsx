@@ -10,7 +10,7 @@ export function Contact() {
         <SectionHeading
           eyebrow="Contact"
           title="Interested in working together?"
-          description="Open to Frontend, React and Next.js opportunities in Bratislava and across Slovakia."
+          description="Open to Frontend Developer, React Developer, Next.js Developer, and related Software Developer roles in Bratislava and across Slovakia."
           align="center"
         />
 
@@ -47,7 +47,7 @@ export function Contact() {
                 className="flex items-center justify-center gap-2 transition hover:text-accent"
               >
                 <Download size={15} aria-hidden />
-                Download Resume
+                Download CV
               </a>
             )}
             <p className="flex items-center justify-center gap-2">

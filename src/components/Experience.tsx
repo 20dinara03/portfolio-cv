@@ -9,7 +9,7 @@ export function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="Professional experience"
-          description="Commercial frontend development at WebStead — building production React, Next.js and TypeScript applications for SaaS, e-commerce and corporate clients."
+          description="Commercial frontend development at WebStead — React, Next.js, and TypeScript for SaaS, e-commerce, and client-facing products."
         />
 
         <article className="mt-10 overflow-hidden rounded-xl border border-border bg-surface">
@@ -39,7 +39,7 @@ export function Experience() {
                 </div>
               </div>
               <time
-                dateTime="2024-08"
+                dateTime="2024-08/2026-10"
                 className="rounded-md border border-border bg-surface-elevated px-3 py-1.5 text-sm text-muted-foreground"
               >
                 {experience.period}

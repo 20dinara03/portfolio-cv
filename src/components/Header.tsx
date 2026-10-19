@@ -105,7 +105,7 @@ export function Header() {
               rel="noopener noreferrer"
               className="ml-1 inline-flex items-center gap-1.5 rounded-lg border border-accent/30 bg-accent/10 px-3.5 py-2 text-sm font-medium text-accent transition hover:bg-accent/20"
             >
-              Resume
+              CV
               <ExternalLink size={13} aria-hidden />
             </a>
           ) : null}
@@ -148,7 +148,7 @@ export function Header() {
                   className="flex items-center gap-2 rounded-md px-3 py-3 font-medium text-accent"
                   onClick={() => setOpen(false)}
                 >
-                  Resume
+                  CV
                   <ExternalLink size={14} aria-hidden />
                 </a>
               </li>

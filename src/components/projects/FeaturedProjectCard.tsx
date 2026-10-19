@@ -9,15 +9,29 @@ type FeaturedProjectCardProps = {
   priority?: boolean;
 };
 
+function getCardHighlights(project: Project): string[] {
+  if (project.technicalHighlights?.length) {
+    return project.technicalHighlights.slice(0, 2);
+  }
+  if (project.caseStudy?.challenges?.length) {
+    return project.caseStudy.challenges.slice(0, 2);
+  }
+  return (project.responsibilities ?? []).slice(0, 2);
+}
+
 export function FeaturedProjectCard({
   project,
   priority = false,
 }: FeaturedProjectCardProps) {
   const detailHref = `/projects/${project.id}`;
+  const highlights = getCardHighlights(project);
 
   return (
     <article className="group flex flex-col overflow-hidden rounded-xl border border-border bg-surface transition-colors hover:border-accent/30">
-      <Link href={detailHref} className="relative block aspect-[16/10] overflow-hidden bg-surface-elevated">
+      <Link
+        href={detailHref}
+        className="relative block aspect-[16/10] overflow-hidden bg-surface-elevated"
+      >
         {project.image ? (
           <Image
             src={project.image}
@@ -52,6 +66,23 @@ export function FeaturedProjectCard({
             {project.description}
           </p>
         </Link>
+
+        {highlights.length > 0 && (
+          <ul className="mt-4 space-y-2" aria-label="Technical highlights">
+            {highlights.map((item) => (
+              <li
+                key={item}
+                className="flex gap-2 text-sm leading-snug text-muted-foreground"
+              >
+                <span
+                  className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent"
+                  aria-hidden
+                />
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
 
         <div className="mt-4 flex flex-wrap gap-1.5">
           {project.stack.slice(0, 6).map((tech) => (

@@ -3,20 +3,19 @@ export const profile = {
   professionalTitle: "Frontend Developer",
   primaryStack: ["React", "Next.js", "TypeScript"] as const,
   tagline:
-    "Frontend Developer specializing in React, Next.js and TypeScript, building production web applications across SaaS and e-commerce. Experienced with REST APIs, authentication, complex application flows, state management and responsive UI development. MSc in Application Development from Brno University of Technology, with a strong software engineering foundation and additional Java/Spring Boot experience.",
+    "Frontend Developer with around two years of commercial experience building SaaS and e-commerce applications with React, Next.js, and TypeScript. I enjoy turning complex workflows into intuitive interfaces — from interactive dashboards and forms to API-connected product features.",
 
-  /** Update this single line when relocation/visa status changes */
-  relocationStatus:
-    "Relocating to Bratislava, Slovakia · Slovak national D visa process underway",
+  /** Update this single line when relocation status changes */
+  relocationStatus: "Bratislava, Slovakia — relocating November 2026",
 
-  location: "Kazan, Russia",
+  location: "Bratislava, Slovakia — relocating November 2026",
   targetLocation: "Bratislava, Slovakia",
 
   email: "garipovad020@gmail.com",
   emailSecondary: "dg_Yelena-Servis@mail.ru",
   github: "https://github.com/20dinara03",
   portfolio: "https://portfolio-cv-ashy.vercel.app",
-  /** Add PDF URL when available — e.g. "/resume/dinara-garipova-cv.pdf" */
+  /** Keep pointing at the current resume file until a new PDF is added */
   resumeUrl: "/resume/dinara-garipova-cv.pdf",
 
   university: "https://www.fit.vut.cz/",
@@ -26,10 +25,9 @@ export const profile = {
   },
 
   about: [
-    "I work as a commercial Frontend Developer at WebStead, building production React, Next.js and TypeScript applications for SaaS, e-commerce and client-facing web products.",
-    "My day-to-day work covers REST API integration, authentication flows, dashboards, CRUD interfaces, complex forms, filtering, state management and reusable UI architecture across responsive interfaces.",
-    "I hold an MSc in Application Development from the Faculty of Information Technology, Brno University of Technology (FIT VUT), with additional Java, Spring Boot, SQL and backend experience from university coursework and projects.",
-    "I am relocating to Bratislava and am primarily interested in Frontend, React and Next.js roles — bringing a solid software engineering foundation and backend familiarity as an additional advantage.",
+    "I'm a frontend developer who enjoys bringing ideas to life, especially when a project combines thoughtful design with interesting technical challenges. I like understanding how things work, experimenting with different approaches, and continuously improving what I create.",
+    "Outside of coding, I love staying active. I enjoy working out at the gym, figure skating, and dancing. I'm also passionate about cooking — especially experimenting with restaurant-style dishes and adapting recipes to make them high in protein and lower in fat without sacrificing flavor.",
+    "Recently, I've also become interested in assembling and improving models for an automated greenhouse project. It's a fun way to explore how software and physical systems can work together, and to keep learning beyond traditional web development.",
   ],
 
   education: [

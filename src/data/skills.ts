@@ -6,8 +6,8 @@ export type SkillGroup = {
 
 export const skillCategories: SkillGroup[] = [
   {
-    name: "Frontend",
-    subtitle: "Primary commercial specialization",
+    name: "Primary commercial stack",
+    subtitle: "Technologies I use most in production work",
     items: [
       "React",
       "Next.js",
@@ -20,53 +20,44 @@ export const skillCategories: SkillGroup[] = [
     ],
   },
   {
-    name: "Web Development",
-    subtitle: "Production application patterns",
+    name: "Frontend application development",
+    subtitle: "Patterns from commercial SaaS and e-commerce work",
     items: [
       "REST APIs",
       "Authentication",
-      "Responsive UI",
-      "Form Validation",
+      "Form validation",
+      "Reusable components",
+      "Responsive interfaces",
+      "Git",
     ],
   },
   {
-    name: "Backend / Additional Engineering",
-    subtitle: "University coursework and projects — not my primary commercial role",
+    name: "Additional academic / project experience",
+    subtitle: "University coursework and projects — supporting knowledge",
     items: [
       "Java",
       "Spring Boot",
       "SQL",
       "PostgreSQL",
-      "Node.js / Express",
-      "C# / .NET",
+      "Docker",
+      "Node.js",
+      "Flutter",
+      "Firebase",
       "Python",
       "C / C++",
-      "Django",
-      "Flutter / Dart",
-      "Firebase",
-    ],
-  },
-  {
-    name: "Tools",
-    subtitle: "Daily workflow and delivery",
-    items: [
-      "Git",
-      "GitHub",
-      "GitLab",
-      "Docker",
+      "C# / .NET",
       "Figma",
       "WordPress",
-      "Vite",
-      "React Hook Form",
-      "Axios",
-      "Framer Motion",
     ],
   },
 ];
 
 export const languages = [
   { name: "Russian", level: "Native" },
-  { name: "Czech", level: "B1/B2" },
+  { name: "Czech", level: "B2" },
   { name: "English", level: "B2" },
-  { name: "Slovak", level: "Good passive comprehension" },
+  {
+    name: "Slovak",
+    level: "Basic / passive comprehension supported by Czech",
+  },
 ];

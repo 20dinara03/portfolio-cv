@@ -7,9 +7,16 @@ import type { CaseStudy, Project } from "@/types/project";
  * Status rule: public domains (not *.webstead.ru) → Live / Completed.
  * Staging/preview on webstead.ru → In Development.
  *
- * Featured order: Moonera first … Spinny last.
+ * Featured order: Spinny → Cantexniki → Interbuilding → Paradim.
  * Project images are site photography/assets (not full-page screenshots).
  */
+export const FEATURED_ORDER = [
+  "spinny",
+  "cantexniki",
+  "interbuilding",
+  "paradim",
+] as const;
+
 export const projects: Project[] = [
   {
     id: "moonera",
@@ -17,7 +24,7 @@ export const projects: Project[] = [
     year: "2025–2026",
     type: "commercial",
     status: "In Development",
-    featured: true,
+    featured: false,
     commercial: true,
     role: "Frontend Developer · Premium Furniture Catalog",
     description:
@@ -65,7 +72,7 @@ export const projects: Project[] = [
     commercial: true,
     role: "Frontend Developer · E-commerce Platform",
     description:
-      "E-commerce platform with product catalog, filtering, shopping cart functionality, Redux Toolkit state management, REST API integration and responsive interfaces across desktop and mobile.",
+      "E-commerce platform focused on product catalog interaction, filtering, shopping-cart state, REST API integration, and responsive layouts across desktop and mobile.",
     stack: [
       "Next.js",
       "React",
@@ -78,10 +85,14 @@ export const projects: Project[] = [
     imageAlt: "Cantexniki e-commerce homepage",
     liveUrl: "https://cantexniki.ru",
     responsibilities: [
-      "Primary frontend contributor (majority of Git commits) on the Next.js storefront",
-      "Product catalog navigation, filtering, promo tiles and mobile filter overlays",
-      "Shopping cart and checkout sticky aside, payment options and CDEK delivery integration",
-      "Redux Toolkit state for cart and commerce flows; responsive layouts from Figma",
+      "Built catalog navigation, filtering, and mobile filter overlays for product discovery",
+      "Implemented shopping-cart state and checkout UX with Redux Toolkit",
+      "Integrated REST APIs for catalog, checkout, and delivery options",
+      "Delivered responsive commerce layouts from Figma across desktop and mobile",
+    ],
+    technicalHighlights: [
+      "Catalog filtering and mobile filter sheet UX",
+      "Redux Toolkit cart state with API-backed checkout flow",
     ],
     caseStudy: {
       productContext:
@@ -115,7 +126,7 @@ export const projects: Project[] = [
     year: "2025–2026",
     type: "commercial",
     status: "Live",
-    featured: true,
+    featured: false,
     commercial: true,
     role: "Frontend Developer · E-commerce",
     description: "Door manufacturer storefront (Poseidon Doors) — WooCommerce catalog, product configurator, 3D door viewer, cart, and checkout. Primary frontend contributor.",
@@ -164,24 +175,29 @@ export const projects: Project[] = [
     status: "In Development",
     featured: true,
     commercial: true,
-    role: "Frontend Developer · Corporate landing",
-    description: "Architecture & construction company site — project gallery, geography map, Lenis smooth scroll, Framer Motion, and validated inquiry forms. Primary frontend author.",
+    role: "Frontend Developer · Architecture & Construction",
+    description:
+      "Architecture and construction website with project gallery, geography map, motion-driven sections, and validated inquiry forms. Staging build in active development.",
     stack: [
       "Next.js",
+      "React",
       "TypeScript",
       "Framer Motion",
       "React Hook Form",
       "Lenis",
-      "Maps",
     ],
     image: "/projects/paradim.jpg",
     imageAlt: "Paradim architecture landing",
     liveUrl: "https://paradim.webstead.ru",
     responsibilities: [
-      "Primary frontend author (50+ commits) on Next.js 16 site",
-      "Lenis smooth scroll (including trackpad jank fixes) and Framer Motion sections",
-      "Geography map UI and portfolio gallery layouts",
-      "Validated inquiry forms with React Hook Form and phone inputs",
+      "Implemented Next.js site structure with portfolio gallery and geography map UI",
+      "Built Lenis smooth scroll and Framer Motion section interactions",
+      "Developed validated inquiry forms with React Hook Form and phone inputs",
+      "Polished trackpad scroll behaviour and responsive layout details",
+    ],
+    technicalHighlights: [
+      "Lenis smooth scroll with trackpad jank fixes",
+      "Validated inquiry forms with React Hook Form",
     ],
   },
   {
@@ -190,7 +206,7 @@ export const projects: Project[] = [
     year: "2026",
     type: "commercial",
     status: "In Development",
-    featured: true,
+    featured: false,
     commercial: true,
     role: "Frontend Developer · Site migration",
     description: "Construction company site migrated from Tilda to React + Vite + TypeScript — project catalog, blog, legal pages, and responsive layouts. Active development.",
@@ -216,7 +232,7 @@ export const projects: Project[] = [
     year: "2026",
     type: "commercial",
     status: "Live",
-    featured: true,
+    featured: false,
     commercial: true,
     role: "Frontend Developer · Corporate WordPress",
     description: "Construction company WordPress site — custom theme for completed and project houses, portfolios, and request forms integrated with Webstead forms API.",
@@ -237,7 +253,7 @@ export const projects: Project[] = [
     year: "2025",
     type: "commercial",
     status: "Live",
-    featured: true,
+    featured: false,
     commercial: true,
     role: "Frontend Developer · Corporate portal",
     description: "Career portal for an engineering & construction company — bilingual RU/EN, vacancies, and candidate flows.",
@@ -263,21 +279,25 @@ export const projects: Project[] = [
     status: "Live",
     featured: true,
     commercial: true,
-    role: "Frontend Developer · Corporate + promo",
-    description: "Interior design company platform — main site with user accounts and a separate promo landing for lead generation.",
-    stack: [
-      "WordPress",
-      "PHP",
-      "Accounts",
-      "Forms",
-    ],
+    role: "Frontend Developer · Commercial Website",
+    description:
+      "Commercial interior-design website with account functionality, multi-step business briefs, portfolio presentation, and a separate promo landing for lead generation.",
+    stack: ["WordPress", "PHP", "JavaScript", "Accounts", "Forms"],
     image: "/projects/interbuilding.jpg",
     imageAlt: "Interbuilding main site",
     liveUrl: "https://interbuilding.ru",
     liveUrlLabel: "Main site",
     secondaryUrl: "https://promo.interbuilding.ru/",
     secondaryUrlLabel: "Promo landing",
-    responsibilities: ["Main site with services, portfolio, multi-step briefs, and contact flows", "User accounts and messaging integrated into the production site", "Separate promo landing for fixed-price renovation campaigns"],
+    responsibilities: [
+      "Built services, portfolio, multi-step brief, and contact flows on the main site",
+      "Integrated user accounts and messaging into the production website",
+      "Delivered a separate promo landing for fixed-price renovation campaigns",
+    ],
+    technicalHighlights: [
+      "User accounts and messaging on a live commercial site",
+      "Multi-step brief and lead-generation flows",
+    ],
   },
   {
     id: "spinny",
@@ -289,7 +309,7 @@ export const projects: Project[] = [
     commercial: true,
     role: "Frontend Developer · SaaS Web Application",
     description:
-      "Production SaaS web application with authentication, dashboard functionality, CRUD operations, statistics, tariff management, complex forms, validation, reusable UI components, drag-and-drop functionality and REST API integration.",
+      "Production SaaS application with authenticated dashboards, CRUD interfaces, complex forms, validation, drag-and-drop editing, and REST API integration.",
     stack: [
       "Next.js",
       "React",
@@ -306,10 +326,14 @@ export const projects: Project[] = [
     secondaryUrl: "https://lk.spinny.ru/",
     secondaryUrlLabel: "Dashboard",
     responsibilities: [
-      "Built JWT-authenticated dashboard flows with REST API integration, loading, toast and error states",
-      "Implemented wheel editor CRUD: design, sectors, win probabilities, CRM integrations and install",
-      "Developed drag-and-drop sector builder (@dnd-kit) and React Hook Form + Yup validation",
-      "Added statistics views, tariff/plan management UX, exit-intent lead capture and Yandex Metrika goals",
+      "Built JWT-authenticated dashboard flows with REST API integration, loading, toast, and error states",
+      "Implemented widget CRUD: design, sectors, win probabilities, CRM integrations, and install",
+      "Developed drag-and-drop sector builder (@dnd-kit) with React Hook Form + Yup validation",
+      "Added statistics views and tariff/plan management UX in the customer dashboard",
+    ],
+    technicalHighlights: [
+      "Authenticated dashboard with CRUD and REST API integration",
+      "Drag-and-drop sector editor with React Hook Form + Yup validation",
     ],
     caseStudy: {
       productContext:
@@ -560,11 +584,14 @@ export const projects: Project[] = [
 ];
 
 export function getFeaturedProjects(): Project[] {
-  return projects.filter((p) => p.featured && p.commercial);
+  return FEATURED_ORDER.map((id) => projects.find((p) => p.id === id)).filter(
+    (project): project is Project =>
+      Boolean(project && project.featured && project.commercial),
+  );
 }
 
 export function getMoreCommercialProjects(): Project[] {
-  return projects.filter((p) => !p.featured && p.commercial);
+  return projects.filter((p) => p.commercial && !p.featured);
 }
 
 export function getProjectBySlug(slug: string): Project | undefined {

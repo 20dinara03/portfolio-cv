@@ -10,8 +10,8 @@ export function FeaturedProjects() {
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Featured Projects"
-          title="Production applications I built"
-          description="Selected commercial frontend projects — SaaS dashboards, e-commerce platforms and client-facing catalogs built with React, Next.js and TypeScript."
+          title="Selected commercial work"
+          description="Four projects that best show my frontend work — SaaS dashboards, e-commerce, and commercial websites with real product workflows."
         />
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
