@@ -6,9 +6,9 @@ export const profile = {
     "Frontend Developer with around two years of commercial experience building SaaS and e-commerce applications with React, Next.js, and TypeScript. I enjoy turning complex workflows into intuitive interfaces — from interactive dashboards and forms to API-connected product features.",
 
   /** Update this single line when relocation status changes */
-  relocationStatus: "Bratislava, Slovakia — relocating November 2026",
+  relocationStatus: "Bratislava, Slovakia",
 
-  location: "Bratislava, Slovakia — relocating November 2026",
+  location: "Bratislava, Slovakia",
   targetLocation: "Bratislava, Slovakia",
 
   email: "garipovad020@gmail.com",
