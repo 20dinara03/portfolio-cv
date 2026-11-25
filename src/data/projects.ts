@@ -50,6 +50,8 @@ export const projects: Project[] = [
       "Docker",
       "LLM",
     ],
+    image: "/projects/ai-legal-platform.jpg",
+    imageAlt: "AI-powered legal services platform abstract cover",
     responsibilities: [
       "Developing a full-stack legal services platform with AI-powered assistance, service management, and appointment booking",
       "Implementing backend functionality, database integration, REST APIs, and AI service integration within a modular architecture",
@@ -102,6 +104,8 @@ export const projects: Project[] = [
       "REST API",
       "Docker",
     ],
+    image: "/projects/geospatial-platform.jpg",
+    imageAlt: "Geospatial data management platform abstract cover",
     responsibilities: [
       "Built backend services and REST APIs using Java and Spring Boot for geospatial data management",
       "Implemented geospatial data import, validation, and coordinate system transformations",
