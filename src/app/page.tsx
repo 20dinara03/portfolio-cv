@@ -21,7 +21,7 @@ const jsonLd = {
     addressLocality: profile.targetLocation,
     addressCountry: "SK",
   },
-  sameAs: [profile.github],
+  sameAs: [profile.github, profile.linkedin],
   worksFor: {
     "@type": "Organization",
     name: profile.company.name,

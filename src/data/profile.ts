@@ -20,6 +20,7 @@ export const profile = {
   phone: "+420 705 924 816",
   emailSecondary: "dg_Yelena-Servis@mail.ru",
   github: "https://github.com/20dinara03",
+  linkedin: "https://www.linkedin.com/in/dinara-garipova-b833a2426",
   portfolio: "https://portfolio-cv-ashy.vercel.app",
   resumeUrl: "/resume/Dinara_Garipova_CV.pdf",
 

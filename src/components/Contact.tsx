@@ -1,7 +1,7 @@
 import { profile } from "@/data/profile";
 import { SectionHeading } from "./SectionHeading";
 import { Mail, MapPin, Download, Phone } from "lucide-react";
-import { GitHubIcon } from "./Icons";
+import { GitHubIcon, LinkedInIcon } from "./Icons";
 
 export function Contact() {
   return (
@@ -61,6 +61,15 @@ export function Contact() {
             >
               <GitHubIcon size={15} />
               github.com/20dinara03
+            </a>
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 transition hover:text-accent"
+            >
+              <LinkedInIcon size={15} />
+              LinkedIn
             </a>
             {profile.resumeUrl && (
               <a
