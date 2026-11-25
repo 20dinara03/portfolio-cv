@@ -1,16 +1,19 @@
 import { profile } from "@/data/profile";
 import { SectionHeading } from "./SectionHeading";
-import { Mail, MapPin, Download } from "lucide-react";
+import { Mail, MapPin, Download, Phone } from "lucide-react";
 import { GitHubIcon } from "./Icons";
 
 export function Contact() {
   return (
-    <section id="contact" className="scroll-mt-20 border-t border-border py-16 sm:py-24">
+    <section
+      id="contact"
+      className="scroll-mt-20 border-t border-border py-16 sm:py-24"
+    >
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Contact"
           title="Interested in working together?"
-          description="Open to Frontend Developer, React Developer, Next.js Developer, and related Software Developer roles in Bratislava and across Slovakia."
+          description="Open to Full-Stack, Frontend, Backend, Software Engineering, QA & Software Testing, and IT Analysis roles in Bratislava and across Slovakia."
           align="center"
         />
 
@@ -18,6 +21,17 @@ export function Contact() {
           <p className="text-muted-foreground">
             Email works best. I typically reply within 1–2 business days.
           </p>
+
+          <ul className="mt-5 flex flex-wrap justify-center gap-2">
+            {profile.openTo.map((item) => (
+              <li
+                key={item}
+                className="rounded-md border border-border bg-surface-elevated px-2.5 py-1 text-xs text-muted-foreground"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
 
           <div className="mt-7 flex flex-col gap-3">
             <a
@@ -27,6 +41,15 @@ export function Contact() {
               <Mail size={16} aria-hidden />
               {profile.email}
             </a>
+            {profile.phone && (
+              <a
+                href={`tel:${profile.phone.replace(/\s/g, "")}`}
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-medium text-foreground transition hover:border-accent/30"
+              >
+                <Phone size={16} aria-hidden />
+                {profile.phone}
+              </a>
+            )}
           </div>
 
           <div className="mt-8 space-y-3 text-sm text-muted">

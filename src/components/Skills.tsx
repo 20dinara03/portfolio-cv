@@ -8,7 +8,7 @@ export function Skills() {
         <SectionHeading
           eyebrow="Technical Skills"
           title="Technology foundation"
-          description="Organized by experience level — commercial React/Next.js/TypeScript first, then broader academic and project knowledge."
+          description="Technical skills organized by area — commercial frontend strength, plus backend, databases, testing, and software engineering knowledge."
         />
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2">

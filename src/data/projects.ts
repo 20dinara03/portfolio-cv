@@ -7,17 +7,133 @@ import type { CaseStudy, Project } from "@/types/project";
  * Status rule: public domains (not *.webstead.ru) → Live / Completed.
  * Staging/preview on webstead.ru → In Development.
  *
- * Featured order: Spinny → Cantexniki → Interbuilding → Paradim.
+ * Featured order: Spinny → Cantexniki → AI Legal → Geospatial.
  * Project images are site photography/assets (not full-page screenshots).
  */
 export const FEATURED_ORDER = [
   "spinny",
   "cantexniki",
-  "interbuilding",
-  "paradim",
+  "ai-legal-platform",
+  "geospatial-platform",
+] as const;
+
+export const PROJECT_FILTERS = [
+  "All",
+  "Frontend",
+  "Full-Stack",
+  "Backend",
+  "AI",
+  "Mobile & IoT",
+  "E-commerce",
 ] as const;
 
 export const projects: Project[] = [
+  {
+    id: "ai-legal-platform",
+    name: "AI-Powered Legal Services Platform",
+    year: "2026",
+    type: "personal",
+    status: "In Development",
+    featured: true,
+    commercial: false,
+    categories: ["Full-Stack", "AI"],
+    role: "Full-Stack / AI / SaaS",
+    description:
+      "A full-stack legal services platform designed to provide AI-powered assistance, legal service management, and appointment booking. Includes backend functionality, database integration, REST APIs, and AI service integration within a modular architecture.",
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Node.js",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "LLM",
+    ],
+    responsibilities: [
+      "Developing a full-stack legal services platform with AI-powered assistance, service management, and appointment booking",
+      "Implementing backend functionality, database integration, REST APIs, and AI service integration within a modular architecture",
+    ],
+    technicalHighlights: [
+      "Modular full-stack architecture with REST APIs and database integration",
+      "AI/LLM-assisted service flows for legal assistance and booking",
+    ],
+    caseStudy: {
+      productContext:
+        "A legal services SaaS platform combining AI-powered assistance with service management and appointment booking.",
+      myRole:
+        "Full-stack developer implementing frontend and backend pieces of a modular architecture currently in active development.",
+      whatIBuilt: [
+        "Application structure for service management and appointment booking flows",
+        "Backend and REST API integration points for platform features",
+        "Database-backed data model foundations with PostgreSQL",
+        "AI service integration hooks within a modular architecture",
+      ],
+      technicalImplementation: [
+        "Next.js and React with TypeScript",
+        "Node.js backend services and REST APIs",
+        "PostgreSQL and Redis for data and caching",
+        "Dockerized development workflow",
+        "LLM integration for AI-powered assistance",
+      ],
+      result:
+        "In development — core architecture and feature work in progress; no public production deployment yet.",
+    },
+  },
+  {
+    id: "geospatial-platform",
+    name: "Geospatial Data Management & Processing Platform",
+    year: "2023–2024",
+    type: "personal",
+    status: "Completed",
+    featured: true,
+    commercial: false,
+    categories: ["Backend", "Full-Stack"],
+    role: "Backend / Data Processing / Geospatial Systems · Meridian LLC",
+    description:
+      "Geospatial data management platform for importing, validating, transforming, and managing data from field surveys and drone imagery — built with Java, Spring Boot, Python, PostgreSQL, and PostGIS.",
+    stack: [
+      "Java",
+      "Spring Boot",
+      "Python",
+      "PostgreSQL",
+      "PostGIS",
+      "Hibernate",
+      "REST API",
+      "Docker",
+    ],
+    responsibilities: [
+      "Built backend services and REST APIs using Java and Spring Boot for geospatial data management",
+      "Implemented geospatial data import, validation, and coordinate system transformations",
+      "Developed Python-based data processing and automation workflows for survey and drone imagery data",
+      "Managed spatial data storage and querying with PostgreSQL and PostGIS",
+      "Integrated with map-based visualization interfaces",
+    ],
+    technicalHighlights: [
+      "Java/Spring Boot REST backends for geospatial import and management",
+      "PostGIS storage with Python validation and coordinate transformation workflows",
+    ],
+    caseStudy: {
+      productContext:
+        "A geospatial data platform for importing, validating, transforming, and managing survey and drone imagery data, developed during backend work at Meridian LLC.",
+      myRole:
+        "Junior Backend Developer contributing to geospatial services, data processing pipelines, and spatial database workflows.",
+      whatIBuilt: [
+        "Backend services for geospatial data import and management",
+        "Validation, coordinate transformation, and automation workflows in Python",
+        "Spatial storage and query patterns with PostgreSQL and PostGIS",
+        "REST APIs for accessing surveying results",
+      ],
+      technicalImplementation: [
+        "Java, Spring Boot, Hibernate, and REST APIs",
+        "Python processing for validation and transformations",
+        "PostgreSQL + PostGIS spatial storage",
+        "Docker-based development workflows with JUnit testing",
+      ],
+      result:
+        "Completed backend and data-processing work for geospatial survey workflows at Meridian LLC (September 2023 – May 2024).",
+    },
+  },
   {
     id: "moonera",
     name: "Moonera Habitat",
@@ -26,6 +142,7 @@ export const projects: Project[] = [
     status: "In Development",
     featured: false,
     commercial: true,
+    categories: ["Frontend", "E-commerce"],
     role: "Frontend Developer · Premium Furniture Catalog",
     description:
       "Premium furniture catalog in development — responsive category and product pages, interior/editorial sections and API-driven content based on high-fidelity designs.",
@@ -70,6 +187,7 @@ export const projects: Project[] = [
     status: "Live",
     featured: true,
     commercial: true,
+    categories: ["Frontend", "E-commerce"],
     role: "Frontend Developer · E-commerce Platform",
     description:
       "E-commerce platform focused on product catalog interaction, filtering, shopping-cart state, REST API integration, and responsive layouts across desktop and mobile.",
@@ -128,6 +246,7 @@ export const projects: Project[] = [
     status: "Live",
     featured: false,
     commercial: true,
+    categories: ["Frontend", "E-commerce"],
     role: "Frontend Developer · E-commerce",
     description: "Door manufacturer storefront (Poseidon Doors) — WooCommerce catalog, product configurator, 3D door viewer, cart, and checkout. Primary frontend contributor.",
     stack: [
@@ -173,8 +292,9 @@ export const projects: Project[] = [
     year: "2025–2026",
     type: "commercial",
     status: "In Development",
-    featured: true,
+    featured: false,
     commercial: true,
+    categories: ["Frontend"],
     role: "Frontend Developer · Architecture & Construction",
     description:
       "Architecture and construction website with project gallery, geography map, motion-driven sections, and validated inquiry forms. Staging build in active development.",
@@ -208,6 +328,7 @@ export const projects: Project[] = [
     status: "In Development",
     featured: false,
     commercial: true,
+    categories: ["Frontend"],
     role: "Frontend Developer · Site migration",
     description: "Construction company site migrated from Tilda to React + Vite + TypeScript — project catalog, blog, legal pages, and responsive layouts. Active development.",
     stack: [
@@ -234,6 +355,7 @@ export const projects: Project[] = [
     status: "Live",
     featured: false,
     commercial: true,
+    categories: ["Frontend"],
     role: "Frontend Developer · Corporate WordPress",
     description: "Construction company WordPress site — custom theme for completed and project houses, portfolios, and request forms integrated with Webstead forms API.",
     stack: [
@@ -255,6 +377,7 @@ export const projects: Project[] = [
     status: "Live",
     featured: false,
     commercial: true,
+    categories: ["Frontend"],
     role: "Frontend Developer · Corporate portal",
     description: "Career portal for an engineering & construction company — bilingual RU/EN, vacancies, and candidate flows.",
     stack: [
@@ -277,8 +400,9 @@ export const projects: Project[] = [
     year: "2025",
     type: "commercial",
     status: "Live",
-    featured: true,
+    featured: false,
     commercial: true,
+    categories: ["Frontend"],
     role: "Frontend Developer · Commercial Website",
     description:
       "Commercial interior-design website with account functionality, multi-step business briefs, portfolio presentation, and a separate promo landing for lead generation.",
@@ -307,6 +431,7 @@ export const projects: Project[] = [
     status: "Live",
     featured: true,
     commercial: true,
+    categories: ["Frontend", "Full-Stack"],
     role: "Frontend Developer · SaaS Web Application",
     description:
       "Production SaaS application with authenticated dashboards, CRUD interfaces, complex forms, validation, drag-and-drop editing, and REST API integration.",
@@ -372,6 +497,7 @@ export const projects: Project[] = [
     status: "In Development",
     featured: false,
     commercial: true,
+    categories: ["Frontend", "E-commerce"],
     role: "Frontend Developer · E-commerce SPA",
     description: "Door-manufacturer catalog SPA with product configurator, filters, pagination, cart context, and checkout flows. React + Vite + TypeScript; staging build in active development.",
     stack: [
@@ -420,6 +546,7 @@ export const projects: Project[] = [
     status: "In Development",
     featured: false,
     commercial: true,
+    categories: ["Frontend"],
     role: "Frontend Developer · Corporate site",
     description: "Architecture bureau site rebuilt in Next.js from a Tilda design — CMS-driven projects, forms with phone validation, video, careers, and contacts. Primary frontend author.",
     stack: [
@@ -447,6 +574,7 @@ export const projects: Project[] = [
     status: "In Development",
     featured: false,
     commercial: true,
+    categories: ["Frontend", "E-commerce"],
     role: "Frontend Developer · CMS / storefront",
     description: "Specialized doors storefront on Joomla — migration/maintenance, Projects section with category filters, photo bank grid, and contacts updates. Active development.",
     stack: [
@@ -474,6 +602,7 @@ export const projects: Project[] = [
     status: "In Development",
     featured: false,
     commercial: true,
+    categories: ["Frontend"],
     role: "Frontend Developer · Landing",
     description: "Marketing landing with HTML/CSS/JS — request cards, FAQ motion, form controls, and Docker/nginx staging deploy.",
     stack: [
@@ -496,6 +625,7 @@ export const projects: Project[] = [
     status: "Live",
     featured: false,
     commercial: true,
+    categories: ["Frontend"],
     role: "Frontend Developer · Main site + generator",
     description: "Main Kuptsov Realty site plus a Handlebars template generator shipping dozens of business-center promo landings.",
     stack: [
@@ -520,6 +650,7 @@ export const projects: Project[] = [
     status: "Live",
     featured: false,
     commercial: true,
+    categories: ["Frontend"],
     role: "Frontend Developer · Logistics platform",
     description: "International logistics site with geo IP routing, delivery calculator, and personal account entry.",
     stack: [
@@ -544,6 +675,7 @@ export const projects: Project[] = [
     status: "Live",
     featured: false,
     commercial: true,
+    categories: ["Frontend", "E-commerce"],
     role: "Frontend Developer · E-commerce",
     description: "Official Daikin dealer storefront — catalog, promos, installation services, and cart.",
     stack: ["WordPress", "PHP", "E-commerce"],
@@ -559,6 +691,7 @@ export const projects: Project[] = [
     status: "In Development",
     featured: false,
     commercial: true,
+    categories: ["Frontend"],
     role: "Frontend Developer · Luxury brand",
     description: "Architecture bureau site for luxury real estate — mission, process, portfolio, and contact flows. Staging preview.",
     stack: ["HTML", "CSS", "JavaScript"],
@@ -574,6 +707,7 @@ export const projects: Project[] = [
     status: "Live",
     featured: false,
     commercial: true,
+    categories: ["Frontend", "E-commerce"],
     role: "Frontend Developer · E-commerce",
     description: "Moisture-resistant doors storefront — catalog, online configurator, gallery, and cart.",
     stack: ["WordPress", "PHP", "Docker"],
@@ -585,22 +719,21 @@ export const projects: Project[] = [
 
 export function getFeaturedProjects(): Project[] {
   return FEATURED_ORDER.map((id) => projects.find((p) => p.id === id)).filter(
-    (project): project is Project =>
-      Boolean(project && project.featured && project.commercial),
+    (project): project is Project => Boolean(project && project.featured),
   );
 }
 
 export function getMoreCommercialProjects(): Project[] {
-  return projects.filter((p) => p.commercial && !p.featured);
+  return projects.filter((p) => !p.featured);
 }
 
 export function getProjectBySlug(slug: string): Project | undefined {
   return projects.find((p) => p.id === slug);
 }
 
-/** All commercial projects get a detail page at /projects/[slug] */
+/** All portfolio projects get a detail page at /projects/[slug] */
 export function getCommercialProjects(): Project[] {
-  return projects.filter((p) => p.commercial);
+  return projects;
 }
 
 /** @deprecated use getCommercialProjects — kept for compatibility */
@@ -634,6 +767,8 @@ export function resolveCaseStudy(project: Project): CaseStudy {
     Completed: "Completed commercial delivery.",
     "In Development":
       "Staging / in development — not all functionality is production-final yet.",
+    Planned:
+      "Planned project — described functionality is intended work, not a completed delivery.",
     Private: "Private / internal commercial project.",
   };
 

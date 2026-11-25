@@ -17,7 +17,7 @@ export function Education() {
         <SectionHeading
           eyebrow="Education"
           title="Academic background"
-          description="MSc in Application Development and BSc in Information Systems and Technology from FIT VUT Brno — supporting my software engineering foundation."
+          description="MSc in Application Development and bachelor's degrees from FIT VUT Brno and KNRTU — supporting full-stack software engineering depth."
         />
 
         <div className="mt-10 space-y-4">

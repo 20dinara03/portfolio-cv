@@ -21,27 +21,31 @@ const jetbrains = JetBrains_Mono({
 });
 
 const siteDescription =
-  "Frontend Developer with commercial React, Next.js, and TypeScript experience building SaaS and e-commerce applications. Seeking opportunities in Bratislava, Slovakia.";
+  "Full-Stack Software Developer based in Bratislava, Slovakia. Portfolio featuring React, Next.js, TypeScript, Java, Spring Boot, Python, Node.js, and software engineering projects.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(profile.portfolio),
   title: {
-    default: `${profile.name} | Frontend Developer`,
+    default: `${profile.name} | Full-Stack Software Developer`,
     template: `%s | ${profile.name}`,
   },
   description: siteDescription,
   keywords: [
-    "Frontend Developer",
+    "Full-Stack Software Developer",
+    "Software Engineer",
     "React",
     "TypeScript",
     "Next.js",
-    "JavaScript",
-    "SaaS",
-    "E-commerce",
+    "Java",
+    "Spring Boot",
+    "Python",
+    "Node.js",
+    "Backend",
+    "Frontend",
+    "QA",
     "Bratislava",
     "Slovakia",
     "VUT FIT",
-    "Application Development",
     "Portfolio",
   ],
   authors: [{ name: profile.name }],
@@ -50,7 +54,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: `${profile.name} | Frontend Developer`,
+    title: `${profile.name} | Full-Stack Software Developer`,
     description: siteDescription,
     type: "website",
     locale: "en_US",
@@ -59,7 +63,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${profile.name} | Frontend Developer`,
+    title: `${profile.name} | Full-Stack Software Developer`,
     description: siteDescription,
   },
   robots: { index: true, follow: true },

@@ -6,7 +6,11 @@ export function About() {
   return (
     <section id="about" className="scroll-mt-20 py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <SectionHeading eyebrow="About" title="A little about me" />
+        <SectionHeading
+          eyebrow="About"
+          title="A little about me"
+          description="Full-Stack Software Developer — commercial software experience, academic foundation, and personal interests."
+        />
 
         <div className="mt-10 grid items-start gap-8 md:grid-cols-[220px_minmax(0,1fr)] lg:grid-cols-[260px_minmax(0,1fr)]">
           <figure className="mx-auto w-full max-w-[260px]">

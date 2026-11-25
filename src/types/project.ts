@@ -1,4 +1,17 @@
-export type ProjectStatus = "Live" | "Completed" | "In Development" | "Private";
+export type ProjectStatus =
+  | "Live"
+  | "Completed"
+  | "In Development"
+  | "Planned"
+  | "Private";
+
+export type ProjectCategory =
+  | "Frontend"
+  | "Full-Stack"
+  | "Backend"
+  | "AI"
+  | "Mobile & IoT"
+  | "E-commerce";
 
 export type CaseStudy = {
   productContext: string;
@@ -13,10 +26,11 @@ export type Project = {
   id: string;
   name: string;
   year?: string;
-  type: "commercial" | "academic";
+  type: "commercial" | "academic" | "personal" | "planned";
   status: ProjectStatus;
   featured: boolean;
   commercial: boolean;
+  categories: ProjectCategory[];
   description: string;
   role: string;
   stack: string[];
